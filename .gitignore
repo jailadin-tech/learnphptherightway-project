@@ -1,0 +1,50 @@
+# Composer dependencies
+/vendor/
+/composer.lock
+
+# Logs and temp files
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Ignore built assets (if applicable)
+!/public/js
+!/public/css
+/public/js/*.map
+/public/css/*.map
+/node_modules/
+/npm-debug.log*
+
+# Environment files
+.env
+.env.*.local
+
+# Docker files
+docker-compose.override.yml
+.dockerignore
+docker-compose.yml
+.docker/
+*.sql
+*.sqlite
+*.env
+
+# Ignore IDEs and editors
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore PHPUnit results
+.phpunit.result.cache
+
+# Ignore coverage reports
+/coverage/
+
+# Ignore caches
+/.phpunit.result.cache
+.php_cs.cache
