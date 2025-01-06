@@ -1,20 +1,6 @@
 # Composer dependencies
-/vendor/
-/composer.lock
-
-# Logs and temp files
-/storage/logs/*
-/storage/framework/cache/*
-/storage/framework/sessions/*
-/storage/framework/views/*
-
-# Ignore built assets (if applicable)
-!/public/js
-!/public/css
-/public/js/*.map
-/public/css/*.map
-/node_modules/
-/npm-debug.log*
+/src/vendor/
+/src/composer.lock
 
 # Environment files
 .env

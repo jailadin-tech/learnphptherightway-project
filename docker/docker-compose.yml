@@ -17,7 +17,7 @@ services:
     restart: always
     ports: 
       - "8008:80"
-    volumes: 
+    volumes:
       - ../src:/var/www
       - ./nginx:/etc/nginx/conf.d
 
