@@ -1,11 +1,11 @@
-version : 3.8
+version : "3.8"
 
 services:
   app:
     build:
       context: ./
       dockerfile: Dockerfile
-    container_name: learnphp-fileimport-transacations
+    container_name: MyApp-SourceCode
     restart: always
     working_dir: /var/www
     volumes :
@@ -13,3 +13,11 @@ services:
 
   ngnix:
     image: nginx:1.27.3-alpine
+    container_name: nginx-server
+    restart: always
+    ports: 
+      - "8008:80"
+    volumes: 
+      - ../src:/var/www
+      - ./nginx:/etc/nginx/conf.d
+
